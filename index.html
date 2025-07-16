@@ -15,7 +15,7 @@
         <div class="container d-flex flex-column justify-content-center align-items-center gap-4" style="min-height: 100vh">
             <!-- TITLE -->
             <div class="row justify-content-center">
-                <div class="col-12 text-center">
+                <div class="text-center">
                     <h1>Simple Calculator</h1>
                 </div>
             </div>
@@ -36,7 +36,7 @@
             <div class="row text-center">
                 <div class="dropdown">
                     <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true" id="dropdown-button">Select Operation</button>
-                    <ul class="dropdown-menu" id="dropdown-menu">
+                    <ul id="dropdown-menu" class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Add (+)</a></li>
                         <li><a class="dropdown-item" href="#">Subtract (-)</a></li>
                         <li><a class="dropdown-item" href="#">Multiply (x)</a></li>
@@ -46,12 +46,14 @@
             </div>
             <!-- BUTTON -->
             <div class="row justify-content-center w-75">
-                <button type="button" id="sum-button" class="btn btn-outline-info col-sm-6 col-md-4 col-10 text-center">Sum</button>
+                <button type="button" id="sum-button" class="btn btn-outline-info col-sm-8 col-md-5 col-10 text-center">Sum</button>
             </div>
             <!-- RESULT -->
             <div class="row justify-content-center text-center w-75">
-                <span id="result" class="border border-3 border-success col-sm-6 col-md-4 col-10 rounded text-center p-2">Result</span>
+                <span id="result" class="border border-3 border-success col-sm-8 col-md-5 col-10 rounded text-center p-2">Result</span>
             </div>
+            <!-- ALERT -->
+            <div id="alert" class="alert alert-info text-center col-sm-8 col-12" role="alert"></div>
         </div>
 
         <script
